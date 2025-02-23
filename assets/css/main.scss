@@ -19,6 +19,11 @@ body {
     color: #a68069;
 }
 
+section.saludo {
+    max-width: 650px;
+    margin-top: 60px;
+}
+
 .img-brand {
     height: 30px;
 }
@@ -52,5 +57,17 @@ body {
         -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 8px 16px 8px 0px;
+    }
+
+    section.saludo {
+        margin-top: 10px;
+
+        .columna-1 {
+            order: 2;
+        }
+
+        .columna-2 {
+            order: 1;
+        }
     }
 }
