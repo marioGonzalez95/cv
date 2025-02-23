@@ -11,12 +11,12 @@
 }
 
 body {
-    background-color: #cfffca;
-    color: #42ab49;
+    background-color: #dcffff;
+    color: #5086c1;
 }
 
 .cont-nav {
-    background-color: #42ab49;
+    background-color: #5086c1;
 }
 
 .bg-light {
@@ -28,13 +28,14 @@ body {
     font-weight: 400;
     font-size: 20px;
     font-family: var(--Montserrat);
-    color: #cfffca;
+    color: #dcffff;
     cursor: pointer !important;
 }
 
 .titulo-brand:hover {
     color: white;
     transition: 0.5s;
+    text-decoration: overline;
 }
 
 section.saludo {
@@ -52,31 +53,32 @@ section.saludo {
         // background-color: #f7f7f7;
         padding: 30px 10px 30px 10px;
         border-radius: 20px;
-        border: 1px solid #42ab49;
+        border: 1px solid #5086c1;
     }
 
     .mi-foto {
         width: 100px;
         border-radius: 60px;
-        border: 3px solid #42ab49;
+        border: 3px solid #5086c1;
     }
 }
 
 .img-brand {
     height: 30px;
     cursor: pointer !important;
+    margin-right: 10px;
 }
 
 .btn-cv {
-    background-color: #cfffca;
-    color: #42ab49;
+    background-color: #dcffff;
+    color: #5086c1;
     font-family: var(--Montserrat);
     cursor: pointer !important;
 }
 
 .btn-cv:hover {
-    background-color: #a5eea0;
-    color: #42ab49;
+    background-color: #b2dafa;
+    color: #5086c1;
     transition: 0.5s;
 }
 
@@ -114,7 +116,7 @@ section.saludo {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #cfffca;
+    background-color: #dcffff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
@@ -124,21 +126,21 @@ section.saludo {
     .mi-foto {
         width: 100px;
         border-radius: 60px;
-        border: 3px solid #42ab49;
+        border: 3px solid #5086c1;
         margin-bottom: 30px;
     }
 
     a.btn-cv {
         text-align: justify;
-        background-color: #42ab49;
-        color: #cfffca;
+        background-color: #5086c1;
+        color: #dcffff;
         font-family: var(--Montserrat);
         cursor: pointer !important;
     }
 
     a.btn-cv:hover {
-        background-color: #5dc460;
-        color: #cfffca;
+        background-color: #6a9eda;
+        color: #dcffff;
     }
 }
 
@@ -151,6 +153,10 @@ section.saludo {
         font-weight: 400;
         font-size: 20px;
         font-family: var(--Montserrat);
+    }
+
+    .titulo-brand:hover {
+        text-decoration: none;
     }
 
     .navbar {
