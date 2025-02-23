@@ -2,22 +2,77 @@
 <html lang="es">
   <head id="head"> </head>
   <body>
+    <div id="header" class="cont-nav"></div>
     <div class="container">
-      <div id="header"></div>
       <section class="saludo mx-auto">
-        <div class="row">
+        <h1 class="text-center titulo-principal-saludo">
+          Hola soy un desarrollador web de San Lorenzo, Paraguay
+        </h1>
+        <div class="row mx-auto cont-columnas">
           <!-- Columna de 80% en pantallas grandes (md y superior), 100% en pantallas pequeñas -->
-          <div class="col-12 col-md-8 columna-1 text-center">
-            <h1>Mario González</h1>
-            <p>Web Developer Junior</p>
+          <div class="col-12 col-md-8 columna-1 d-flex align-items-center">
+            <div>
+              <h3 class="m-0">Mario González</h3>
+              <p class="m-0">Web Developer Junior</p>
+            </div>
           </div>
 
           <!-- Columna de 20% en pantallas grandes (md y superior), 100% en pantallas pequeñas -->
           <div class="col-12 col-md-4 columna-2 text-center">
-            Contenido de la columna 20%
+            <img class="mi-foto" src="assets/img/1740282334147.jpeg" alt="" />
           </div>
         </div>
       </section>
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h4>
+                Hola visitante, aquí puedes descargar mi Curriculum de forma
+                directa...
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <!--   <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button> -->
+              <a
+                class="btn btn-cv my-2 my-sm-0"
+                href="assets/pdf/CV-mario-gonzalez.pdf"
+                target="_blank"
+              >
+                Curriculum Vita e - CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -41,5 +96,6 @@
     <!-- Contenidos linkeados -->
     <script src="assets/js/head.js"></script>
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/show_modal.js"></script>
   </body>
 </html>
