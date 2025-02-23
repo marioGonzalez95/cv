@@ -18,6 +18,11 @@ body {
   color: #a68069;
 }
 
+section.saludo {
+  max-width: 650px;
+  margin-top: 60px;
+}
+
 .img-brand {
   height: 30px;
 }
@@ -46,5 +51,14 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 8px 16px 8px 0px;
+  }
+  section.saludo {
+    margin-top: 10px;
+  }
+  section.saludo .columna-1 {
+    order: 2;
+  }
+  section.saludo .columna-2 {
+    order: 1;
   }
 }/*# sourceMappingURL=main.css.map */
