@@ -10,7 +10,15 @@
 body {
     background-color: white;
     color: black;
-    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima del viewport */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.container_main {
+    flex: 1;
+    max-width: 650px;
 }
 
 p {
@@ -36,8 +44,16 @@ a {
     font-weight: 400;
     font-size: 20px;
     font-family: var(--Montserrat);
-    color: white;
+    color: white !important;
     cursor: pointer !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: silver;
 }
 
 .titulo-brand:hover {
@@ -47,7 +63,6 @@ a {
 }
 
 section.saludo {
-    max-width: 650px;
     margin-top: 60px;
 
     .cont-columnas {
@@ -72,7 +87,6 @@ section.saludo {
 }
 
 section.description {
-    max-width: 650px;
     margin-top: 60px;
 }
 
@@ -165,7 +179,7 @@ footer {
     font-weight: 400;
     text-align: center;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 60px;
 
     .col-footer {
         max-width: 650px;
