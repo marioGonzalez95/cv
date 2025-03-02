@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head id="head"> </head>
+  <head id="head">
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
   <body>
     <div id="header" class="cont-nav"></div>
     <div class="container">
@@ -19,9 +25,24 @@
 
           <!-- Columna de 20% en pantallas grandes (md y superior), 100% en pantallas pequeñas -->
           <div class="col-12 col-md-4 columna-2 text-center">
-            <img class="mi-foto" src="assets/img/1740282334147.jpeg" alt="" />
+            <img
+              class="mi-foto hidden"
+              src="assets/img/1740282334147.jpeg"
+              alt=""
+            />
           </div>
         </div>
+      </section>
+      <section class="description mx-auto">
+        <h3>Descripción</h3>
+        <p>
+          Soy un desarrollador web junior, con conocimientos en HTML, CSS,
+          JavaScript, PHP, MySQL, Bootstrap, Git, GitHub, entre otros. Me
+          encuentro en constante aprendizaje y en busca de nuevas oportunidades
+          laborales. Actualmente estoy en la búsqueda de un empleo en el área de
+          desarrollo web, donde pueda aplicar mis conocimientos y habilidades, y
+          seguir creciendo.
+        </p>
       </section>
       <!-- Button trigger modal -->
 
@@ -51,7 +72,7 @@
             <div class="modal-body">
               <div class="text-center">
                 <img
-                  class="mi-foto"
+                  class="mi-foto hidden"
                   src="assets/img/1740282334147.jpeg"
                   alt=""
                 />
@@ -81,6 +102,7 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -103,6 +125,8 @@
     <!-- Contenidos linkeados -->
     <script src="assets/js/head.js"></script>
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/footer.js"></script>
     <script src="assets/js/show_modal.js"></script>
+    <script src="assets/js/esconder_imagenes.js"></script>
   </body>
 </html>

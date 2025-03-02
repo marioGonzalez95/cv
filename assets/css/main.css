@@ -3,19 +3,26 @@
 :root {
   --Montserrat: "Montserrat";
   --Roboto: "Roboto";
-}
-
-* {
-  cursor: url("assets/img/cursor_icon_173205.svg"), url("assets/img/cursor_icon_173205.png"), auto !important;
+  --navy: #000080;
 }
 
 body {
-  background-color: #dcffff;
-  color: #5086c1;
+  background-color: white;
+  color: black;
+}
+
+p {
+  font-family: var(--Roboto);
+  font-weight: 400;
+  text-align: justify;
+}
+
+a {
+  cursor: pointer !important;
 }
 
 .cont-nav {
-  background-color: #5086c1;
+  background-color: var(--navy);
 }
 
 .bg-light {
@@ -27,12 +34,12 @@ body {
   font-weight: 400;
   font-size: 20px;
   font-family: var(--Montserrat);
-  color: #dcffff;
+  color: white;
   cursor: pointer !important;
 }
 
 .titulo-brand:hover {
-  color: white;
+  color: silver;
   transition: 0.5s;
   text-decoration: overline;
 }
@@ -50,12 +57,17 @@ section.saludo .titulo-principal-saludo {
   font-family: var(--Roboto);
   padding: 30px 10px 30px 10px;
   border-radius: 20px;
-  border: 1px solid #5086c1;
+  border: 1px solid var(--navy);
 }
 section.saludo .mi-foto {
   width: 100px;
   border-radius: 60px;
-  border: 3px solid #5086c1;
+  border: 3px solid var(--navy);
+}
+
+section.description {
+  max-width: 650px;
+  margin-top: 60px;
 }
 
 .img-brand {
@@ -65,15 +77,16 @@ section.saludo .mi-foto {
 }
 
 .btn-cv {
-  background-color: #dcffff;
-  color: #5086c1;
+  background-color: white;
+  color: black;
   font-family: var(--Montserrat);
+  font-weight: 400;
   cursor: pointer !important;
 }
 
 .btn-cv:hover {
-  background-color: #b2dafa;
-  color: #5086c1;
+  background-color: silver;
+  color: black;
   transition: 0.5s;
 }
 
@@ -103,29 +116,56 @@ section.saludo .mi-foto {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #dcffff;
+  background-color: white;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
   font-family: var(--Montserrat);
+  text-align: center;
 }
 .modal-content .mi-foto {
   width: 100px;
   border-radius: 60px;
-  border: 3px solid #5086c1;
+  border: 3px solid var(--navy);
   margin-bottom: 30px;
 }
 .modal-content a.btn-cv {
   text-align: justify;
-  background-color: #5086c1;
-  color: #dcffff;
+  background-color: var(--navy);
+  color: white;
   font-family: var(--Montserrat);
   cursor: pointer !important;
 }
 .modal-content a.btn-cv:hover {
-  background-color: #6a9eda;
-  color: #dcffff;
+  background-color: silver;
+  color: black;
+}
+
+footer {
+  background-color: var(--navy);
+  color: white;
+  font-family: var(--Montserrat);
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer .col-footer {
+  max-width: 650px;
+}
+footer .col-contactos-footer {
+  margin-bottom: 10px;
+  max-width: 650px;
+}
+footer .col-contactos-footer a:hover {
+  text-decoration: overline;
+}
+
+.margin_bottom_cero {
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 850px) {
@@ -159,6 +199,9 @@ section.saludo .mi-foto {
   }
   section.saludo .columna-2 {
     margin-bottom: 30px;
+  }
+  section.description {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 720px) {
