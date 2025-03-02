@@ -152,6 +152,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 60px;
 }
 footer .col-footer {
   max-width: 650px;
@@ -201,6 +202,10 @@ footer .col-contactos-footer a:hover {
     margin-bottom: 30px;
   }
   section.description {
+    margin-top: 30px;
+  }
+  footer {
+    position: inherit;
     margin-top: 30px;
   }
 }

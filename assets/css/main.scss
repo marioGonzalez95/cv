@@ -168,6 +168,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 60px;
 
     .col-footer {
         max-width: 650px;
@@ -237,6 +238,8 @@ footer {
     }
 
     footer {
+        position: inherit;
+        margin-top: 30px;
     }
 }
 
