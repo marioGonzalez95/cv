@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="header" class="cont-nav"></div>
-    <div style="flex: 1;" class="container container_main">
+    <div style="flex: 1" class="container container_main">
       <section class="saludo mx-auto margenes_top">
         <h1 class="text-center titulo-principal-saludo">
           Hola soy un desarrollador web de San Lorenzo, Paraguay
@@ -33,58 +33,112 @@
           </div>
         </div>
       </section>
+
+      <button id="modoNocturno" type="button">🌙</button>
+
       <section class="description mx-auto margenes_top">
         <h3>Descripción</h3>
         <p>
-          Soy un desarrollador web junior, con conocimientos en <b>HTML, CSS,
-          JavaScript, PHP, MySQL, Bootstrap, Git, GitHub, entre otros.</b> Me
-          encuentro en constante aprendizaje y en busca de nuevas oportunidades
-          laborales. Actualmente estoy en la búsqueda de un empleo en el área de
-          desarrollo web, donde pueda aplicar mis conocimientos y habilidades, y
-          seguir creciendo.
+          Soy un desarrollador web junior, con conocimientos en
+          <b
+            >HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, Git, GitHub, entre
+            otros.</b
+          >
+          Me encuentro en constante aprendizaje y en busca de nuevas
+          oportunidades laborales. Actualmente estoy en la búsqueda de un empleo
+          en el área de desarrollo web, donde pueda aplicar mis conocimientos y
+          habilidades, y seguir creciendo.
         </p>
+
+        <!-- <button id="modoNocturno" type="button">🌙</button> -->
 
         <h3>Experiencia Laboral</h3>
 
-        <p>
-          <b
-            >Software Natura - Diciembre 2020 a mayo 2022 - Asunción - Paraguay: </b
-          ><br>
-          Carga de contenido para el proyecto de Siembra Digital, haciendo uso
-          de tecnologías como, HTML, CSS, Git, Bitbucket, Jira y Miro. <br><br>
-          Metodologías ágiles usadas:
-          <ul>
-            <li>
-              Kanban, se enfoca en el flujo de trabajo
-            </li>
-            <li>
-              Scrum, se centra en el trabajo por iteración.
-            </li>
-            <li>
-              Scrumban, es una metodología de gestión de proyectos que combina dos
-estrategias ágiles comunes: Scrum y Kanban.
-            </li>
-          </ul>
-        </p>
+        <div class="accordion mt-10" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Collapsible Group Item #1
+                </button>
+              </h2>
+            </div>
 
-        <p>
-          <b>
-            OTIS - Junio 2019 a agosto 2019 - Asunción - Paraguay:
-          </b><br>
-          Tareas de apoyo a los técnicos de dicha empresa, trabajos de mantención
-de elevadores.
-        </p>
-
-        <p>
-          <b>
-            UAA (Universidad Autónoma de Asunción) - Abril 2016 a diciembre
-2016 - Asunción - Paraguay
-          </b><br>
-          Tareas de apoyo a los alumnos, con el registro de horas de práctica de sus
-materias, apoyo a profesores con elementos audiovisuales como
-proyectores, instalación de programas varios, mantención y reparación de
-equipos informáticos en dichas salas de informática.
-        </p>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Some placeholder content for the first accordion panel. This
+                panel is shown by default, thanks to the
+                <code>.show</code> class.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Collapsible Group Item #2
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Some placeholder content for the second accordion panel. This
+                panel is hidden by default.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Collapsible Group Item #3
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                And lastly, the placeholder content for the third and final
+                accordion panel. This panel is hidden by default.
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Button trigger modal -->
 
@@ -98,7 +152,7 @@ equipos informáticos en dichas salas de informática.
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
@@ -164,5 +218,6 @@ equipos informáticos en dichas salas de informática.
     <script src="assets/js/show_modal.js"></script>
     <script src="assets/js/esconder_imagenes.js"></script>
     <script src="assets/js/scroolto.js"></script>
+    <script src="assets/js/nocturno.js"></script>
   </body>
 </html>
