@@ -135,7 +135,6 @@ section.description {
   background-color: var(--navy);
   color: white;
   font-family: var(--Montserrat);
-  cursor: pointer !important;
 }
 .modal-content a.btn-cv:hover {
   background-color: silver;
@@ -149,10 +148,7 @@ footer {
   font-weight: 400;
   text-align: center;
   padding: 10px;
-  /*   position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-top: 60px; */
+  margin-top: 30px;
 }
 footer .col-footer {
   max-width: 650px;
@@ -163,6 +159,8 @@ footer .col-contactos-footer {
 }
 footer .col-contactos-footer a:hover {
   text-decoration: overline;
+  color: silver !important;
+  transition: 0.5s;
 }
 
 .margin_bottom_cero {

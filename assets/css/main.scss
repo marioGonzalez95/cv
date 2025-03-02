@@ -150,7 +150,6 @@ section.description {
         background-color: var(--navy);
         color: white;
         font-family: var(--Montserrat);
-        cursor: pointer !important;
     }
 
     a.btn-cv:hover {
@@ -166,10 +165,7 @@ footer {
     font-weight: 400;
     text-align: center;
     padding: 10px;
-    /*   position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: 60px; */
+    margin-top: 30px;
 
     .col-footer {
         max-width: 650px;
@@ -181,6 +177,8 @@ footer {
 
         a:hover {
             text-decoration: overline;
+            color: silver !important;
+            transition: 0.5s;
         }
     }
 }
