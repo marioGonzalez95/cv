@@ -152,6 +152,7 @@ a {
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: absolute;
   background-color: #ffffeb !important;
+  border: 2px solid #ecd6c0 !important;
 }
 
 section.saludo .cont-columnas {
