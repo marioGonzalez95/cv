@@ -45,11 +45,7 @@ body {
   outline: none;
   font-size: 30px;
 }
-#modoNocturno[type=button]:not(:disabled):hover {
-  border: transparent;
-  background: transparent;
-}
-#modoNocturno[type=button]:not(:disabled):focus {
+#modoNocturno[type=button]:not(:disabled):hover, #modoNocturno[type=button]:not(:disabled):focus {
   border: transparent;
   background: transparent;
 }
@@ -58,22 +54,19 @@ body {
   background-color: #181a1b !important;
   filter: invert(1) hue-rotate(180deg);
 }
-
 .modo-oscuro img,
 .modo-oscuro video,
 .modo-oscuro iframe {
   filter: invert(1) hue-rotate(180deg) !important;
 }
-
 .modo-oscuro table {
   border-color: white !important;
 }
-
 .modo-oscuro ::-moz-selection {
   background-color: #004daa !important;
   color: white !important;
 }
-
+.modo-oscuro ::-moz-selection,
 .modo-oscuro ::selection {
   background-color: #004daa !important;
   color: white !important;
@@ -137,7 +130,6 @@ a {
   background-color: transparent;
   border: 0;
 }
-
 .dropdown-item:hover {
   background-color: #ecd6c0 !important;
 }
