@@ -1,24 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
-@keyframes parpadeo {
-  0% {
-    border-color: red;
-  }
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: red;
-  }
-}
-@keyframes marqueeScroll {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
-}
 :root {
   --Montserrat: "Montserrat";
   --Roboto: "Roboto";
@@ -245,7 +226,6 @@ footer {
   color: #ffffeb;
   font-family: var(--Montserrat);
   font-weight: 400;
-  text-align: center;
   padding: 10px;
   margin-top: 60px;
 }
@@ -259,6 +239,12 @@ footer .col-contactos-footer {
 footer .col-contactos-footer a:hover {
   text-decoration: overline;
   transition: 0.5s;
+}
+footer .justificacion-del-footer {
+  text-align: justify !important;
+}
+footer .altura-links-footer {
+  line-height: 40px;
 }
 
 .margin_bottom_cero {
@@ -343,13 +329,11 @@ button:not(:disabled) {
     position: inherit;
     margin-top: 30px;
   }
-  .marquee {
-    animation: marqueeScroll 30s linear infinite;
+  footer .justificacion-del-footer {
+    text-align: center !important;
   }
-}
-@media screen and (max-width: 850px) and (max-width: 768px) {
-  .marquee {
-    animation-duration: 15s;
+  footer .altura-links-footer {
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 720px) {
