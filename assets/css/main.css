@@ -46,8 +46,9 @@ body {
 .modo-oscuro ::-moz-selection {
   background-color: #004daa !important;
   color: white !important;
+  background-color: #004daa !important;
+  color: white !important;
 }
-.modo-oscuro ::-moz-selection,
 .modo-oscuro ::selection {
   background-color: #004daa !important;
   color: white !important;
@@ -272,6 +273,92 @@ button:not(:disabled) {
   background-color: #ffffeb;
   border: 1px solid #a68069;
   color: #a68069;
+}
+
+section.rick-and-mrty {
+  /* The container must be positioned relative: */
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+section.rick-and-mrty .margin-cartas-top {
+  margin-top: 30px;
+}
+section.rick-and-mrty .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  height: 510px;
+}
+section.rick-and-mrty .card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: #ffffeb;
+  border: 1px solid #a68069;
+  color: #a68069;
+  border-radius: 0px 0px 10px 10px;
+}
+section.rick-and-mrty .card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background-color: #ffffeb;
+  border: 1px solid #a68069;
+  border-radius: 10px 10px 0px 0px;
+}
+section.rick-and-mrty .custom-select-2 {
+  position: relative;
+  font-family: Arial;
+}
+section.rick-and-mrty .custom-select select {
+  display: none !important; /*hide original SELECT element: */
+}
+section.rick-and-mrty .select-selected {
+  background-color: #ffffeb;
+}
+section.rick-and-mrty .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #a68069 transparent transparent transparent;
+}
+section.rick-and-mrty .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #a68069 transparent;
+  top: 7px;
+}
+section.rick-and-mrty .select-items div,
+section.rick-and-mrty .select-selected {
+  color: #a68069;
+  padding: 8px 16px;
+  border: 1px solid #a68069;
+  cursor: pointer;
+}
+section.rick-and-mrty .select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+section.rick-and-mrty .select-hide {
+  display: none;
+}
+section.rick-and-mrty .select-items div:hover,
+section.rick-and-mrty .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 850px) {
