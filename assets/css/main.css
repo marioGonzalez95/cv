@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ffffeb;
+  background-color: #e3e5f1;
   color: #a68069;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ a {
 }
 
 .cont-nav {
-  background-color: #a68069;
+  background-color: #e3e5f1;
 }
 
 .bg-light {
@@ -91,11 +91,11 @@ a {
   font-weight: 400;
   font-size: 20px;
   font-family: var(--Montserrat);
-  color: #ffffeb !important;
+  color: #1d2744 !important;
   cursor: pointer !important;
 }
 .titulo-brand:hover {
-  color: silver;
+  color: #1d2744;
   transition: 0.5s;
   text-decoration: overline;
 }
@@ -106,18 +106,19 @@ a {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #a68069 !important;
+  color: #1d2744 !important;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
 }
 .dropdown-item:hover {
-  background-color: #ecd6c0 !important;
+  background-color: transparent !important;
+  text-decoration: overline;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffeb !important;
+  color: #1d2744 !important;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255 255 235)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -125,8 +126,8 @@ a {
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: absolute;
-  background-color: #ffffeb !important;
-  border: 2px solid #ecd6c0 !important;
+  background-color: white !important;
+  border: 2px solid !important;
 }
 
 section.saludo .cont-columnas {
@@ -154,17 +155,17 @@ section.saludo .mi-foto {
 }
 
 .btn-cv {
-  background-color: #ffffeb;
-  color: #a68069 !important;
+  background-color: #c87557;
+  color: #fefdfd !important;
   font-family: var(--Montserrat);
   font-weight: 400;
   cursor: pointer !important;
-  border: 1px solid #a68069;
+  border: 1px solid #c36140;
+  border-radius: 20px;
 }
 .btn-cv:hover {
-  background-color: #a68069 !important;
-  color: #ffffeb !important;
-  border: 1px solid #ffffeb;
+  background-color: #fefdfd !important;
+  color: #c87557 !important;
   transition: 0.5s;
 }
 .btn-cv:focus {
@@ -319,7 +320,8 @@ section.rick-and-mrty .custom-select-2 {
   font-family: Arial;
 }
 section.rick-and-mrty .custom-select select {
-  display: none !important; /*hide original SELECT element: */
+  display: none !important;
+  /*hide original SELECT element: */
 }
 section.rick-and-mrty .select-selected {
   background-color: #ffffeb;
