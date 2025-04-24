@@ -7,7 +7,7 @@
 
 body {
   background-color: #e3e5f1;
-  color: #a68069;
+  color: #253d65;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -139,12 +139,13 @@ section.saludo .titulo-principal-saludo {
   font-family: var(--Roboto);
   padding: 30px 10px 30px 10px;
   border-radius: 20px;
-  border: 1px solid #a68069;
+  border: 1px solid #264165;
+  background-color: #d8dced;
 }
 section.saludo .mi-foto {
   width: 100px;
   border-radius: 60px;
-  border: 3px solid #a68069;
+  border: 2px solid #264165;
 }
 
 .img-brand {
@@ -160,7 +161,7 @@ section.saludo .mi-foto {
   font-family: var(--Montserrat);
   font-weight: 400;
   cursor: pointer !important;
-  border: 1px solid #c36140;
+  border: 2px solid #c36140;
   border-radius: 20px;
 }
 .btn-cv:hover {
@@ -255,8 +256,8 @@ footer .altura-links-footer {
 
 .accordion > .card .card-header {
   margin-bottom: -1px;
-  background-color: #ecd6c0;
-  border: 1px solid #a68069;
+  background-color: #d8dced;
+  border: 1px solid #264165;
 }
 
 [type=button]:not(:disabled),
@@ -264,16 +265,16 @@ footer .altura-links-footer {
 [type=submit]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
-  color: #a68069;
+  color: #253d65;
   text-decoration: none;
 }
 
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem;
-  background-color: #ffffeb;
-  border: 1px solid #a68069;
-  color: #a68069;
+  background-color: white;
+  border: 1px solid #264165;
+  color: #253d65;
 }
 
 section.rick-and-mrty {
