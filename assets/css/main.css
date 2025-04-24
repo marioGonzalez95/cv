@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #ffffeb;
-  color: #a68069;
+  background-color: #e3e5f1;
+  color: #253d65;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -46,8 +46,9 @@ body {
 .modo-oscuro ::-moz-selection {
   background-color: #004daa !important;
   color: white !important;
+  background-color: #004daa !important;
+  color: white !important;
 }
-.modo-oscuro ::-moz-selection,
 .modo-oscuro ::selection {
   background-color: #004daa !important;
   color: white !important;
@@ -74,11 +75,11 @@ p {
 
 a {
   cursor: pointer !important;
-  color: #ffffeb !important;
+  color: #253d65 !important;
 }
 
 .cont-nav {
-  background-color: #a68069;
+  background-color: #e3e5f1;
 }
 
 .bg-light {
@@ -90,11 +91,11 @@ a {
   font-weight: 400;
   font-size: 20px;
   font-family: var(--Montserrat);
-  color: #ffffeb !important;
+  color: #1d2744 !important;
   cursor: pointer !important;
 }
 .titulo-brand:hover {
-  color: silver;
+  color: #1d2744;
   transition: 0.5s;
   text-decoration: overline;
 }
@@ -105,27 +106,28 @@ a {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #a68069 !important;
+  color: #1d2744 !important;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
 }
 .dropdown-item:hover {
-  background-color: #ecd6c0 !important;
+  background-color: transparent !important;
+  text-decoration: overline;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffeb !important;
+  color: #1d2744 !important;
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255 255 235)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(37 61 101)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: absolute;
-  background-color: #ffffeb !important;
-  border: 2px solid #ecd6c0 !important;
+  background-color: white !important;
+  border: 2px solid !important;
 }
 
 section.saludo .cont-columnas {
@@ -137,12 +139,13 @@ section.saludo .titulo-principal-saludo {
   font-family: var(--Roboto);
   padding: 30px 10px 30px 10px;
   border-radius: 20px;
-  border: 1px solid #a68069;
+  border: 1px solid #264165;
+  background-color: #d8dced;
 }
 section.saludo .mi-foto {
   width: 100px;
   border-radius: 60px;
-  border: 3px solid #a68069;
+  border: 2px solid #264165;
 }
 
 .img-brand {
@@ -153,17 +156,17 @@ section.saludo .mi-foto {
 }
 
 .btn-cv {
-  background-color: #ffffeb;
-  color: #a68069 !important;
+  background-color: #c87557;
+  color: #fefdfd !important;
   font-family: var(--Montserrat);
   font-weight: 400;
   cursor: pointer !important;
-  border: 1px solid #a68069;
+  border: 2px solid #c36140;
+  border-radius: 20px;
 }
 .btn-cv:hover {
-  background-color: #a68069 !important;
-  color: #ffffeb !important;
-  border: 1px solid #ffffeb;
+  background-color: #fefdfd !important;
+  color: #c87557 !important;
   transition: 0.5s;
 }
 .btn-cv:focus {
@@ -222,8 +225,8 @@ section.saludo .mi-foto {
 }
 
 footer {
-  background-color: #a68069;
-  color: #ffffeb;
+  background-color: #e3e5f1;
+  color: #253d65;
   font-family: var(--Montserrat);
   font-weight: 400;
   padding: 40px 10px 40px 10px;
@@ -252,9 +255,9 @@ footer .altura-links-footer {
 }
 
 .accordion > .card .card-header {
-  margin-bottom: -1px;
-  background-color: #ecd6c0;
-  border: 1px solid #a68069;
+  margin-bottom: 0px;
+  background-color: #d8dced;
+  border: 1px solid #264165;
 }
 
 [type=button]:not(:disabled),
@@ -262,16 +265,107 @@ footer .altura-links-footer {
 [type=submit]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
-  color: #a68069;
+  color: #253d65;
   text-decoration: none;
+  border-color: transparent;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem;
+  background-color: white;
+  border: 1px solid #264165;
+  color: #253d65;
+}
+
+section.rick-and-mrty {
+  /* The container must be positioned relative: */
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+section.rick-and-mrty .margin-cartas-top {
+  margin-top: 30px;
+}
+section.rick-and-mrty .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  height: 510px;
+}
+section.rick-and-mrty .card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
   background-color: #ffffeb;
   border: 1px solid #a68069;
   color: #a68069;
+  border-radius: 0px 0px 10px 10px;
+}
+section.rick-and-mrty .card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background-color: #ffffeb;
+  border: 1px solid #a68069;
+  border-radius: 10px 10px 0px 0px;
+}
+section.rick-and-mrty .custom-select-2 {
+  position: relative;
+  font-family: Arial;
+}
+section.rick-and-mrty .custom-select select {
+  display: none !important;
+  /*hide original SELECT element: */
+}
+section.rick-and-mrty .select-selected {
+  background-color: #ffffeb;
+}
+section.rick-and-mrty .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #a68069 transparent transparent transparent;
+}
+section.rick-and-mrty .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #a68069 transparent;
+  top: 7px;
+}
+section.rick-and-mrty .select-items div,
+section.rick-and-mrty .select-selected {
+  color: #a68069;
+  padding: 8px 16px;
+  border: 1px solid #a68069;
+  cursor: pointer;
+}
+section.rick-and-mrty .select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+section.rick-and-mrty .select-hide {
+  display: none;
+}
+section.rick-and-mrty .select-items div:hover,
+section.rick-and-mrty .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 850px) {
