@@ -1,43 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head id="head">
-    <style>
-      .hidden {
-        display: none;
-      }
-    </style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario González</title>
+    <link rel="icon" href="img/ico_.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=0.2" />
   </head>
   <body>
-    <div id="header" class="cont-nav"></div>
-    <div style="flex: 1" class="container container_main">
-      <section class="saludo mx-auto margenes_top">
-        <h1 class="text-center titulo-principal-saludo">
-          Hola soy un desarrollador web de San Lorenzo, Paraguay
-        </h1>
-        <div class="row mx-auto cont-columnas">
-          <!-- Columna de 80% en pantallas grandes (md y superior), 100% en pantallas pequeñas -->
-          <div class="col-12 col-md-8 columna-1 d-flex align-items-center">
-            <div>
-              <h3 class="m-0">Mario González</h3>
-              <p class="m-0 web-developer-junior">Web Developer Junior</p>
-            </div>
-          </div>
-
-          <!-- Columna de 20% en pantallas grandes (md y superior), 100% en pantallas pequeñas -->
-          <div class="col-12 col-md-4 columna-2 text-center">
-            <img
-              class="mi-foto hidden"
-              src="assets/img/1740282334147.png"
-              alt=""
-            />
-          </div>
+    <button id="back-to-top" class="back-to-top">
+      <img src="img/arrow1_115547.png" alt="arrow to top" />
+    </button>
+    <div class="container">
+      <div class="cont-hero d-flex justify-content-center align-items-center">
+        <div class="cont-hero-items">
+          <h1 class="cont-hero-h1">
+            Hola soy un desarrollador web de San Lorenzo, Paraguay
+          </h1>
+          <img class="cont-hero-photo" src="img/photo_.png" alt="my photo" />
+          <h2 class="text-center">Mario González</h2>
+          <p class="text-center">Web Developer Junior</p>
+          <a
+            target="_blank"
+            href="pdf/CV-mario-gonzalez.pdf"
+            class="cont-hero-curriculum"
+            >Currículum Vitae</a
+          >
         </div>
-      </section>
-
-      <section class="description mx-auto margenes_top">
-        <h3>Descripción</h3>
-        <p class="text-left">
-          Soy un desarrollador web junior, con conocimientos en:
+      </div>
+      <div class="cont-descripcion margen-general margen-general-top">
+        <div class="cont-descripcion-items">
+          <h3>Descripción</h3>
+          <p>Soy un desarrollador web junior, con conocimientos en:</p>
           <ul>
             <li>HTML.</li>
             <li>CSS.</li>
@@ -53,155 +49,289 @@
             <li>Linux.</li>
             <li>Entre otros.</li>
           </ul>
-          Me encuentro en constante aprendizaje y en busca de nuevas
-          oportunidades laborales. Actualmente estoy en la búsqueda de un empleo
-          en el área de desarrollo web, donde pueda aplicar mis conocimientos y
-          habilidades, y seguir creciendo.
-        </p>
+          <p>
+            Me encuentro en constante aprendizaje y en busca de nuevas
+            oportunidades laborales. Actualmente estoy en la búsqueda de un
+            empleo en el área de desarrollo web, donde pueda aplicar mis
+            conocimientos y habilidades, y seguir creciendo.
+          </p>
+        </div>
+      </div>
+      <div class="cont-experiencia margen-general">
+        <h3 class="mb-4">Experiencia Laboral</h3>
 
-        <!-- <button id="modoNocturno" type="button">🌙</button> -->
-
-        <h3>Experiencia Laboral</h3>
-
-        <div class="accordion mt-10 margenes_top-2" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-link btn-block text-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
+        <div class="row cont-experiencia-items">
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
                   Web Developer Jr. Software Natura - Diciembre 2020 a mayo 2022
                   - Asunción - Paraguay
-                </button>
-              </h2>
+                </h5>
+                <p class="card-text">
+                  Carga de contenido para el proyecto de Siembra Digital,
+                  haciendo uso de tecnologías como, HTML, CSS, Git, Bitbucket,
+                  Jira y Miro.
+                  <br />
+                  <b>Metodologías ágiles usadas:</b>
+                  <ul>
+                    <li>Kanban, se enfoca en el flujo de trabajo</li>
+                    <li>Scrum, se centra en el trabajo por iteración.</li>
+                    <li>
+                      Scrumban, es una metodología de gestión de proyectos que
+                      combina dos estrategias ágiles comunes: Scrum y Kanban.
+                    </li>
+                  </ul>
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div
-              id="collapseOne"
-              class="collapse show"
-              aria-labelledby="headingOne"
-              data-parent="#accordionExample"
-            >
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
               <div class="card-body">
-                Carga de contenido para el proyecto de Siembra Digital, haciendo
-                uso de tecnologías como, HTML, CSS, Git, Bitbucket, Jira y Miro.
-                <br />
-                Metodologías ágiles usadas:
-                <ul>
-                  <li>Kanban, se enfoca en el flujo de trabajo</li>
-                  <li>Scrum, se centra en el trabajo por iteración.</li>
-                  <li>
-                    Scrumban, es una metodología de gestión de proyectos que
-                    combina dos estrategias ágiles comunes: Scrum y Kanban.
-                  </li>
-                </ul>
+                <h5 class="card-title">
+                    Pasante - Técnico en Electrónica OTIS - Junio 2019 a agosto
+                    2019 - Asunción - Paraguay
+                  </h5>
+                <p class="card-text">
+                    Tareas de apoyo a los técnicos de dicha empresa, trabajos de
+                    mantención de elevadores.
+                  </p>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-link btn-block text-left collapsed"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Pasante - Técnico en Electrónica OTIS - Junio 2019 a agosto
-                  2019 - Asunción - Paraguay
-                </button>
-              </h2>
-            </div>
-            <div
-              id="collapseTwo"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionExample"
-            >
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
               <div class="card-body">
-                Tareas de apoyo a los técnicos de dicha empresa, trabajos de
-                mantención de elevadores.
+                <h5 class="card-title">
+                    Encargado de laboratorios de informática UAA (Universidad
+                    Autónoma de Asunción) - Abril 2016 a diciembre 2016 - Asunción
+                    - Paraguay
+                  </h5>
+                <p class="card-text"><ul>
+                    <li>
+                      Tareas de apoyo a los alumnos, con el registro de horas de
+                      práctica de sus materias.
+                    </li>
+                    <li>
+                      Apoyo a profesores con elementos audiovisuales como
+                      proyectores.
+                    </li>
+                    <li>Instalación de programas varios.</li>
+                    <li>
+                      Mantención y reparación de equipos informáticos en dichas
+                      salas de informática.
+                    </li>
+                  </ul></p>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-link btn-block text-left collapsed"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Encargado de laboratorios de informática UAA (Universidad
-                  Autónoma de Asunción) - Abril 2016 a diciembre 2016 - Asunción
-                  - Paraguay
-                </button>
-              </h2>
-            </div>
-            <div
-              id="collapseThree"
-              class="collapse"
-              aria-labelledby="headingThree"
-              data-parent="#accordionExample"
-            >
+
+        </div>
+      </div>
+
+      <div class="cont-formacion margen-general">
+        <h3 class="mb-4">Formación
+        </h3>
+
+        <div class="row cont-formacion-items">
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
               <div class="card-body">
-                <ul>
-                  <li>
-                    Tareas de apoyo a los alumnos, con el registro de horas de
-                    práctica de sus materias.
-                  </li>
-                  <li>
-                    Apoyo a profesores con elementos audiovisuales como
-                    proyectores.
-                  </li>
-                  <li>Instalación de programas varios.</li>
-                  <li>
-                    Mantención y reparación de equipos informáticos en dichas
-                    salas de informática.
-                  </li>
-                </ul>
+                <h5 class="card-title">
+                    Scrum Foundation Professional Certificate SFPC CERTIPROF Mayo
+                    2023
+                </h5>
+                <p class="card-text">
+                Scrum es un marco de trabajo ágil que se utiliza para gestionar
+                proyectos complejos, fomentando la colaboración, la
+                adaptabilidad y la entrega continua de valor mediante
+                iteraciones cortas y enfoque en equipos autoorganizados.
+                  <br />
+                  <br>
+                  <b>
+                    ID de la credencial 85741025
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Programación básica en Python MITYC (MINISTERIO DE TECNOLOGÍAS
+                  DE LA INFORMACIÓN Y COMUNICACIÓN) Julio 2022 a agosto 2022
+                  </h5>
+                <p class="card-text">
+                Conceptos básicos sobre la programación en el lenguaje Python.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Curso de Inglés CCPA (CENTRO CULTURAL PARAGUAYO AMERICANO)
+                  2015 a 2018
+                  </h5>
+                <p class="card-text">
+                    Gramática de la lengua inglesa, conversación en inglés.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                    Técnico Superior en Electrónica SNPP (SERVICIO NACIONAL DE
+                    PROMOCIÓN PROFESIONAL) Febrero 2017 a noviembre 2018
+                  </h5>
+                <p class="card-text">
+                Fundamentos básicos y avanzados de electrónica industrial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Seminario sobre Seguridad y Salud Ocupacional SNPP (SERVICIO
+                  NACIONAL DE PROMOCIÓN PROFESIONAL) 2018
+                  </h5>
+                <p class="card-text">
+                    <ul>
+                        <li>Uso correcto de elementos de protección personal.</li>
+                        <li>
+                          Correcta interpretación de pictogramas de elementos
+                          químicos, elementos de seguridad y elementos de riesgo.
+                        </li>
+                      </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                    Ingeniería en Sistemas Informáticos UAA (UNIVERSIDAD AUTÓNOMA
+                    DE ASUNCIÓN) Desde marzo 2016
+                  </h5>
+                <p class="card-text">
+                Ingeniería en sistemas informáticos con énfasis en análisis de
+                sistemas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Montaje y Reparación de PC, Redes y Windows Server, Linux SNPP
+                  (SERVICIO NACIONAL DE PROMOCIÓN PROFESIONAL) 2015
+                  </h5>
+                <p class="card-text">
+                    <ul>
+                        <li>Montaje y desmontaje PC.</li>
+                        <li>Mantenimiento de HW y SW.</li>
+                        <li>
+                          Creación y administración de servidor con windows server.
+                        </li>
+                        <li>
+                          Administración de SO linux, instalación y comandos de uso.
+                        </li>
+                      </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">
+                    Bachillerato Técnico en Informática CMA (COLEGIO PRIVADO MARÍA
+                    AUXILIADORA) Febrero 2010 a noviembre 2012
+                  </h5>
+                <p class="card-text">
+                    <ul>
+                        <li>Bases y fundamentos de la informática.</li>
+                        <li>Análisis a pequeña escala de un sistema informático.</li>
+                        <li>Componentes de una PC y un SO y sus funcionamientos.</li>
+                        <li>
+                          Uso de algunos lenguajes de programación como C y Basic.
+                        </li>
+                      </ul>
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="cont-competencias margen-general">
+        <div class="cont-competencias-items">
+          <h3>Competencias</h3>
+          <ul>
+            <li>Creatividad.</li>
+            <li>Perseverancia.</li>
+            <li>Organización.</li>
+            <li>Flexibilidad.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cont-intereses margen-general">
+        <div class="cont-intereses-items">
+          <h3>Intereses</h3>
+          <p>
+            Programación Backend y Frontend.
+          </p>
+        </div>
+      </div>
+
+      <div class="cont-contacto margen-general">
+        <div class="cont-contacto-items">
+          <h3>Contacto</h3>
+          <p>
+            <ul class="list-unstyled ">
+                <li class="justificacion-del-footer">
+                  <a href="mailto:mariog.contacto@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                  </a>
+                </li>
+                <li class="justificacion-del-footer">
+                  <a href="tel:+595991230448">
+                    <i class="fas fa-phone"></i> Teléfono
+                  </a>
+                </li>
+                <li class="justificacion-del-footer">
+                  <a target="_blank" href="https://wa.link/ucrwho">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                  </a>
+                </li>
+                <li class="justificacion-del-footer">
+                  <a target="_blank" href="https://www.linkedin.com/in/mario-gonz%C3%A1lez-429a94190/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </li>
+              </ul>
+          </p>
+        </div>
+      </div>
     </div>
-    <div id="footer"></div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Contenidos linkeados -->
-    <script src="assets/js/head.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/footer.js"></script>
-    <script src="assets/js/show_modal.js"></script>
-    <script src="assets/js/esconder_imagenes.js"></script>
-    <script src="assets/js/scroolto.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js_general_.js"></script>
   </body>
 </html>
