@@ -77,6 +77,7 @@ body img.circle-4 {
 body div.container-body {
   background-color: black;
   z-index: 10;
+  position: relative;
 }
 
 .kenburns-top {
@@ -264,9 +265,8 @@ h3 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  z-index: 999;
+  z-index: 9999;
   box-shadow: 0 0 8px var(--color-letra-general);
-  z-index: 10;
 }
 .back-to-top img {
   height: 100%;
@@ -324,6 +324,7 @@ div.cont-experiencia div.cont-experiencia-items .card-body {
 }
 div.cont-experiencia div.cont-experiencia-items .card {
   background-color: black;
+  z-index: 1 !important;
 }
 
 div.cont-formacion div.cont-formacion-items .card-body {
