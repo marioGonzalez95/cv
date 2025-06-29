@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fonts/Dancing_Script/static/DancingScript-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fonts/Dancing_Script/static/DancingScript-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fonts/Dancing_Script/static/DancingScript-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fonts/Dancing_Script/static/DancingScript-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton/Anton-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PermanentMarker";
+  src: url("../fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+:root {
+  --font-dancing: "Dancing Script";
+  --font-anton: "Anton";
+  --font-PermanentMarker: "PermanentMarker";
+  --font-Nunito: "Nunito";
+  --color-letra-general: #ffffeb;
+}
+
+body {
+  height: 100dvh;
+  background-color: black;
+  color: var(--color-letra-general);
+  font-family: var(--font-Nunito);
+  position: relative;
+  z-index: -1;
+}
+body img.circle-1 {
+  position: fixed;
+  top: -140px;
+  right: -171px;
+  z-index: -1;
+}
+body img.circle-2 {
+  position: fixed;
+  bottom: -81px;
+  left: -171px;
+  z-index: -1;
+}
+body img.circle-3 {
+  position: fixed;
+  top: -26px;
+  left: -161px;
+  z-index: -1;
+}
+body img.circle-4 {
+  position: fixed;
+  bottom: -63px;
+  right: -90px;
+  z-index: -1;
+}
+body div.container-body {
+  background-color: black;
+  z-index: 10;
+}
+
+.margen-general {
+  padding-bottom: 60px;
+}
+
+h3 {
+  text-shadow: 0 0 8px var(--color-letra-general);
+}
+
+.margen-general-top {
+  padding-top: 60px;
+}
+
+.margen-general-bot {
+  padding-bottom: 30px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-letra-general);
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+  box-shadow: 0 0 8px var(--color-letra-general);
+  z-index: 10;
+}
+.back-to-top img {
+  height: 100%;
+  max-height: 30px;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}
+
+div.cont-hero {
+  height: 100dvh;
+  width: 100%;
+}
+div.cont-hero h1.cont-hero-h1 {
+  font-family: var(--font-PermanentMarker);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 8px var(--color-letra-general);
+}
+div.cont-hero img.cont-hero-photo {
+  max-width: 200px;
+  border-radius: 100px;
+  margin: 50px;
+  border: 5px solid var(--color-letra-general);
+}
+div.cont-hero div.cont-hero-items {
+  text-align: center;
+}
+div.cont-hero div.cont-hero-items p {
+  margin-bottom: 30px;
+}
+div.cont-hero a.cont-hero-curriculum {
+  background-color: #fa5f49;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 1px solid #fa5f49;
+  font-weight: bold;
+}
+div.cont-hero a.cont-hero-curriculum:hover {
+  text-decoration: none;
+  background-color: black;
+  color: #fa5f49;
+  box-shadow: 0 0 8px var(--color-letra-general);
+  transition: 1s;
+}
+
+div.cont-experiencia div.cont-experiencia-items .card-body {
+  background-color: black;
+  border: 1px solid var(--color-letra-general);
+  border-radius: 10px;
+  box-shadow: 0 0 8px var(--color-letra-general);
+}
+div.cont-experiencia div.cont-experiencia-items .card {
+  background-color: black;
+}
+
+div.cont-formacion div.cont-formacion-items .card-body {
+  background-color: black;
+  border: 1px solid var(--color-letra-general);
+  border-radius: 10px;
+  box-shadow: 0 0 8px var(--color-letra-general);
+}
+div.cont-formacion div.cont-formacion-items .card {
+  background-color: black;
+}
+
+div.cont-contacto div.cont-contacto-items a {
+  text-decoration: none !important;
+  color: var(--color-letra-general);
+}
+div.cont-contacto div.cont-contacto-items a:hover {
+  text-decoration: none;
+}
+div.cont-contacto div.cont-contacto-items a i {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .col-md-4 {
+    flex: inherit;
+    max-width: 100%;
+  }
+  .margen-general {
+    padding-bottom: 30px;
+  }
+  .margen-general-top {
+    padding-top: 30px;
+  }
+  .cont-hero-h1 {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */
