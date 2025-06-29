@@ -47,6 +47,36 @@ body {
   background-color: black;
   color: var(--color-letra-general);
   font-family: var(--font-Nunito);
+  position: relative;
+  z-index: -1;
+}
+body img.circle-1 {
+  position: fixed;
+  top: -140px;
+  right: -171px;
+  z-index: -1;
+}
+body img.circle-2 {
+  position: fixed;
+  bottom: -81px;
+  left: -171px;
+  z-index: -1;
+}
+body img.circle-3 {
+  position: fixed;
+  top: -26px;
+  left: -161px;
+  z-index: -1;
+}
+body img.circle-4 {
+  position: fixed;
+  bottom: -63px;
+  right: -90px;
+  z-index: -1;
+}
+body div.container-body {
+  background-color: black;
+  z-index: 10;
 }
 
 .margen-general {
@@ -82,6 +112,7 @@ h3 {
   transition: opacity 0.3s ease-in-out;
   z-index: 999;
   box-shadow: 0 0 8px var(--color-letra-general);
+  z-index: 10;
 }
 .back-to-top img {
   height: 100%;
