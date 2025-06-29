@@ -34,11 +34,16 @@
   font-family: "Nunito";
   src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url("../fonts/Archivo_Black/ArchivoBlack-Regular.ttf");
+}
 :root {
   --font-dancing: "Dancing Script";
   --font-anton: "Anton";
   --font-PermanentMarker: "PermanentMarker";
   --font-Nunito: "Nunito";
+  --font-ArchivoBlack: "ArchivoBlack";
   --color-letra-general: #ffffeb;
 }
 
@@ -77,7 +82,6 @@ body img.circle-4 {
 body div.container-body {
   background-color: black;
   z-index: 10;
-  position: relative;
 }
 
 .kenburns-top {
@@ -282,10 +286,9 @@ div.cont-hero {
   width: 100%;
 }
 div.cont-hero h1.cont-hero-h1 {
-  font-family: var(--font-PermanentMarker);
+  font-family: var(--font-ArchivoBlack);
   font-weight: bold;
   text-align: center;
-  text-shadow: 0 0 8px var(--color-letra-general);
 }
 div.cont-hero img.cont-hero-photo {
   max-width: 200px;
