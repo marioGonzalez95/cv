@@ -1,0 +1,454 @@
+// Variables
+$color-letra-general: #ffffeb;
+$fa5f49: #fa5f49;
+
+// Fuentes
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/Dancing_Script/static/DancingScript-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/Dancing_Script/static/DancingScript-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/Dancing_Script/static/DancingScript-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/Dancing_Script/static/DancingScript-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/Anton/Anton-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("../fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "ArchivoBlack";
+    src: url("../fonts/Archivo_Black/ArchivoBlack-Regular.ttf");
+}
+
+// Variables CSS
+:root {
+    --font-dancing: "Dancing Script";
+    --font-anton: "Anton";
+    --font-PermanentMarker: "PermanentMarker";
+    --font-Nunito: "Nunito";
+    --font-ArchivoBlack: "ArchivoBlack";
+    --color-letra-general: #{$color-letra-general};
+}
+
+// Animaciones
+@keyframes kenburns-top {
+    0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 16%;
+    }
+    100% {
+        transform: scale(1.25) translateY(-15px);
+        transform-origin: top;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+// Clases de utilidad para animaciones
+.kenburns-top {
+    animation: kenburns-top 5s ease-out both;
+}
+
+.tracking-in-expand {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.vibrate-1 {
+    animation: vibrate-1 2s linear infinite both;
+}
+
+.text-focus-in {
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.bounce-top {
+    animation: bounce-top 0.9s both;
+}
+
+.jello-horizontal {
+    animation: jello-horizontal 4s infinite both;
+}
+
+.heartbeat {
+    animation: heartbeat 5s ease-in-out infinite both;
+}
+
+// Estilos generales
+body {
+    height: 100dvh;
+    background-color: black;
+    color: $color-letra-general;
+    font-family: var(--font-Nunito);
+    position: relative;
+    z-index: -1;
+
+    // Círculos de fondo
+    img {
+        &.circle-1 {
+            position: fixed;
+            top: -140px;
+            right: -171px;
+            z-index: -1;
+        }
+
+        &.circle-2 {
+            position: fixed;
+            bottom: -81px;
+            left: -171px;
+            z-index: -1;
+        }
+
+        &.circle-3 {
+            position: fixed;
+            top: -26px;
+            left: -161px;
+            z-index: -1;
+        }
+
+        &.circle-4 {
+            position: fixed;
+            bottom: -63px;
+            right: -90px;
+            z-index: -1;
+        }
+    }
+
+    div.container-body {
+        background-color: black;
+        z-index: 10;
+    }
+}
+
+// Utilidades de espaciado
+.margen-general {
+    padding-bottom: 60px;
+
+    &-top {
+        padding-top: 60px;
+    }
+
+    &-bot {
+        padding-bottom: 30px;
+    }
+}
+
+// Títulos
+h3 {
+    text-shadow: 0 0 8px $color-letra-general;
+}
+
+// Botón "volver arriba"
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: $color-letra-general;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+    box-shadow: 0 0 8px $color-letra-general;
+
+    img {
+        height: 100%;
+        max-height: 30px;
+    }
+
+    &.visible {
+        opacity: 1;
+    }
+}
+
+// Sección Hero
+div.cont-hero {
+    height: 100dvh;
+    width: 100%;
+
+    h1.cont-hero-h1 {
+        font-family: var(--font-ArchivoBlack);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    img.cont-hero-photo {
+        max-width: 200px;
+        border-radius: 100px;
+        margin: 50px;
+        border: 5px solid $color-letra-general;
+    }
+
+    div.cont-hero-items {
+        text-align: center;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    a.cont-hero-curriculum {
+        background-color: $fa5f49;
+        color: black;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 30px;
+        border: 1px solid $fa5f49;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            background-color: black;
+            color: $fa5f49;
+            box-shadow: 0 0 8px $color-letra-general;
+            transition: 1s;
+        }
+    }
+}
+
+// Sección Experiencia
+div.cont-experiencia {
+    div.cont-experiencia-items {
+        .card {
+            background-color: black;
+            z-index: 1 !important;
+        }
+
+        .card-body {
+            background-color: black;
+            border: 1px solid $color-letra-general;
+            border-radius: 10px;
+            box-shadow: 0 0 8px $color-letra-general;
+        }
+    }
+}
+
+// Sección Formación
+div.cont-formacion {
+    div.cont-formacion-items {
+        .card {
+            background-color: black;
+        }
+
+        .card-body {
+            background-color: black;
+            border: 1px solid $color-letra-general;
+            border-radius: 10px;
+            box-shadow: 0 0 8px $color-letra-general;
+        }
+        li a.enlaces {
+            text-decoration: none !important;
+            color: $color-letra-general;
+
+            &:hover {
+                text-shadow: 0 0 8px $color-letra-general;
+            }
+        }
+    }
+}
+
+// Sección Contacto
+div.cont-contacto {
+    div.cont-contacto-items {
+        a {
+            text-decoration: none !important;
+            color: $color-letra-general;
+
+            &:hover {
+                // text-decoration: none;
+                text-shadow: 0 0 8px $color-letra-general;
+            }
+
+            i {
+                margin-right: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+// Media Queries
+@media screen and (max-width: 850px) {
+    .col-md-4 {
+        flex: inherit;
+        max-width: 100%;
+    }
+
+    .margen-general {
+        padding-bottom: 30px;
+    }
+
+    .margen-general-top {
+        padding-top: 30px;
+    }
+
+    .cont-hero-h1 {
+        font-size: 24px;
+    }
+}
