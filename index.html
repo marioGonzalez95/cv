@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css?v=0.12" />
+    <link rel="stylesheet" href="css/style.css?v=0.13" />
   </head>
   <body>
     <img class="circle-1 kenburns-top" src="img/cicle_1_.png" alt="circle 1" />
@@ -21,8 +21,32 @@
     <button id="back-to-top" class="back-to-top heartbeat">
       <img src="img/arrow1_115547.png" alt="arrow to top" />
     </button>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-logo">MG</span>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="#inicio" class="sidebar-link active"><i class="fas fa-home"></i><span>Inicio</span></a></li>
+        <li><a href="#descripcion" class="sidebar-link"><i class="fas fa-user"></i><span>Descripción</span></a></li>
+        <li><a href="#experiencia" class="sidebar-link"><i class="fas fa-briefcase"></i><span>Experiencia</span></a></li>
+        <li><a href="#formacion" class="sidebar-link"><i class="fas fa-graduation-cap"></i><span>Formación</span></a></li>
+        <li><a href="#competencias" class="sidebar-link"><i class="fas fa-star"></i><span>Competencias</span></a></li>
+        <li><a href="#intereses" class="sidebar-link"><i class="fas fa-heart"></i><span>Intereses</span></a></li>
+        <li><a href="#contacto" class="sidebar-link"><i class="fas fa-envelope"></i><span>Contacto</span></a></li>
+      </ul>
+    </nav>
+
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
     <div class="container container-body">
-      <div class="cont-hero d-flex justify-content-center align-items-center">
+      <div id="inicio" class="cont-hero d-flex justify-content-center align-items-center">
         <div class="cont-hero-items">
           <h1 class="cont-hero-h1 text-focus-in">
             Hola, soy un Desarrollador web de San Lorenzo, Paraguay
@@ -41,6 +65,7 @@
         </div>
       </div>
       <div
+        id="descripcion"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
@@ -75,7 +100,7 @@
           </p>
         </div>
       </div>
-      <div class="cont-experiencia margen-general">
+      <div id="experiencia" class="cont-experiencia margen-general">
         <h3 class="mb-4">Experiencia Laboral</h3>
 
         <div class="row cont-experiencia-items">
@@ -174,7 +199,7 @@
         </div>
       </div>
 
-      <div class="cont-formacion margen-general">
+      <div id="formacion" class="cont-formacion margen-general">
         <h3 class="mb-4">Formación</h3>
 
         <div class="row cont-formacion-items">
@@ -326,7 +351,7 @@
         </div>
       </div>
 
-      <div data-aos="flip-up" class="cont-competencias margen-general">
+      <div id="competencias" data-aos="flip-up" class="cont-competencias margen-general">
         <div class="cont-competencias-items">
           <h3>Competencias</h3>
           <ul>
@@ -338,14 +363,14 @@
         </div>
       </div>
 
-      <div data-aos="flip-up" class="cont-intereses margen-general">
+      <div id="intereses" data-aos="flip-up" class="cont-intereses margen-general">
         <div class="cont-intereses-items">
           <h3>Intereses</h3>
           <p>Programación Backend y Frontend.</p>
         </div>
       </div>
 
-      <div data-aos="flip-up" class="cont-contacto margen-general">
+      <div id="contacto" data-aos="flip-up" class="cont-contacto margen-general">
         <div class="cont-contacto-items">
           <h3>Contacto</h3>
           <!-- <p> -->
