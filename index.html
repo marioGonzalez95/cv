@@ -1,85 +1,225 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mario González</title>
-    <link rel="icon" href="img/ico_.png" type="image/x-icon" />
+    <title>Mario González — Desarrollador Web</title>
+    <meta
+      name="description"
+      content="CV de Mario González, desarrollador web de San Lorenzo, Paraguay. Experiencia en PHP, JavaScript, Python, bases de datos y servidores Linux."
+    />
+    <meta name="author" content="Mario González" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mario González — Desarrollador Web" />
+    <meta
+      property="og:description"
+      content="CV de Mario González, desarrollador web de San Lorenzo, Paraguay. Experiencia en PHP, JavaScript, Python, bases de datos y servidores Linux."
+    />
+    <meta property="og:locale" content="es_PY" />
+    <meta property="og:image" content="img/photo_.png" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="preload" href="fonts/JetBrains_Mono/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css?v=0.13" />
+    <link rel="stylesheet" href="css/style.css?v=0.14" />
+    <noscript>
+      <style>
+        [data-aos] {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mario González",
+        "jobTitle": "Desarrollador Web",
+        "email": "mariog.contacto@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Lorenzo",
+          "addressCountry": "PY"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/mario-gonz%C3%A1lez-429a94190/",
+          "https://github.com/marioGonzalez95"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <img class="circle-1 kenburns-top" src="img/cicle_1_.png" alt="circle 1" />
-    <img class="circle-2 kenburns-top" src="img/cicle_2_.png" alt="circle 2" />
-    <img class="circle-3 kenburns-top" src="img/cicle_3_.png" alt="circle 2" />
-    <img class="circle-4 kenburns-top" src="img/cicle_4_.png" alt="circle 2" />
-    <button id="back-to-top" class="back-to-top heartbeat">
-      <img src="img/arrow1_115547.png" alt="arrow to top" />
+    <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+    <img class="circle-1" src="img/cicle_1_.png" alt="" aria-hidden="true" />
+    <img class="circle-2" src="img/cicle_2_.png" alt="" aria-hidden="true" />
+    <img class="circle-3" src="img/cicle_3_.png" alt="" aria-hidden="true" />
+    <img class="circle-4" src="img/cicle_4_.png" alt="" aria-hidden="true" />
+
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+      <img src="img/arrow1_115547.png" alt="" aria-hidden="true" />
     </button>
 
-    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="sidebar"
+    >
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
 
-    <nav id="sidebar" class="sidebar">
+    <nav id="sidebar" class="sidebar" aria-label="Navegación principal">
       <div class="sidebar-header">
-        <span class="sidebar-logo">MG</span>
+        <a href="#inicio" class="sidebar-brand">
+          <span class="sidebar-status" aria-hidden="true"></span>
+          <span class="sidebar-logo">mario@cv</span>
+          <span class="sidebar-path">~/portfolio</span>
+        </a>
       </div>
       <ul class="sidebar-nav">
-        <li><a href="#inicio" class="sidebar-link active"><i class="fas fa-home"></i><span>Inicio</span></a></li>
-        <li><a href="#descripcion" class="sidebar-link"><i class="fas fa-user"></i><span>Descripción</span></a></li>
-        <li><a href="#experiencia" class="sidebar-link"><i class="fas fa-briefcase"></i><span>Experiencia</span></a></li>
-        <li><a href="#formacion" class="sidebar-link"><i class="fas fa-graduation-cap"></i><span>Formación</span></a></li>
-        <li><a href="#competencias" class="sidebar-link"><i class="fas fa-star"></i><span>Competencias</span></a></li>
-        <li><a href="#intereses" class="sidebar-link"><i class="fas fa-heart"></i><span>Intereses</span></a></li>
-        <li><a href="#contacto" class="sidebar-link"><i class="fas fa-envelope"></i><span>Contacto</span></a></li>
+        <li>
+          <a href="#inicio" class="sidebar-link active" aria-current="page">
+            <span class="nav-index" aria-hidden="true">00</span>
+            <i class="fas fa-home" aria-hidden="true"></i>
+            <span>inicio.md</span>
+          </a>
+        </li>
+        <li>
+          <a href="#descripcion" class="sidebar-link">
+            <span class="nav-index" aria-hidden="true">01</span>
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <span>descripcion.md</span>
+          </a>
+        </li>
+        <li>
+          <a href="#experiencia" class="sidebar-link">
+            <span class="nav-index" aria-hidden="true">02</span>
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <span>experiencia.log</span>
+          </a>
+        </li>
+        <li>
+          <a href="#formacion" class="sidebar-link">
+            <span class="nav-index" aria-hidden="true">03</span>
+            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            <span>formacion.log</span>
+          </a>
+        </li>
+        <li>
+          <a href="#competencias" class="sidebar-link">
+            <span class="nav-index" aria-hidden="true">04</span>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <span>competencias.toml</span>
+          </a>
+        </li>
+        <li>
+          <a href="#intereses" class="sidebar-link">
+            <span class="nav-index" aria-hidden="true">05</span>
+            <i class="fas fa-heart" aria-hidden="true"></i>
+            <span>intereses.txt</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contacto" class="sidebar-link">
+            <span class="nav-index" aria-hidden="true">06</span>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>contacto.sh</span>
+          </a>
+        </li>
       </ul>
+      <div class="sidebar-footer">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>disponible para trabajar</span>
+      </div>
     </nav>
 
-    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <div id="sidebar-overlay" class="sidebar-overlay" aria-hidden="true"></div>
 
-    <div class="container container-body">
-      <div id="inicio" class="cont-hero d-flex justify-content-center align-items-center">
+    <main class="container container-body">
+      <section id="inicio" class="cont-hero" tabindex="-1">
         <div class="cont-hero-items">
-          <h1 class="cont-hero-h1 text-focus-in">
-            Hola, soy un Desarrollador web de San Lorenzo, Paraguay
-          </h1>
-          <img class="cont-hero-photo" src="img/photo_.png" alt="my photo" />
-          <h2 class="text-center">Mario González</h2>
-          <p class="text-center">Desarrollador web</p>
-          <div class="heartbeat">
-            <a
-              target="_blank"
-              href="pdf/CV-mario-gonzalez.pdf"
-              class="cont-hero-curriculum"
-              >Currículum Vitae</a
-            >
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="terminal-dots" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </span>
+              <span class="terminal-title">mario@cv — ~/portfolio</span>
+              <span class="terminal-meta">zsh</span>
+            </div>
+            <div class="terminal-body">
+              <p class="terminal-comment">
+                # Hola, soy un Desarrollador web de San Lorenzo, Paraguay
+              </p>
+              <p class="terminal-line">
+                <span class="prompt-user">mario</span><span class="prompt-at">@</span><span class="prompt-host">cv</span><span class="prompt-path">:~$</span>
+                <span class="terminal-cmd">whoami</span>
+              </p>
+              <h1 class="cont-hero-h1">Mario González</h1>
+              <p class="hero-role">
+                <span class="prompt-arrow" aria-hidden="true">›</span>
+                Desarrollador web
+                <span class="cursor" aria-hidden="true"></span>
+              </p>
+              <p class="hero-location">// San Lorenzo, Paraguay</p>
+              <div class="hero-actions">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="pdf/CV-mario-gonzalez.pdf"
+                  class="cont-hero-curriculum"
+                  aria-label="Descargar currículum vitae en PDF"
+                  >[ ↓ curriculum.pdf ]</a
+                >
+                <a href="#contacto" class="hero-secondary">[ contacto ]</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-aside">
+            <picture>
+              <source srcset="img/photo_.webp" type="image/webp" />
+              <img
+                class="cont-hero-photo"
+                src="img/photo_.png"
+                alt="Foto de Mario González"
+                width="200"
+                height="200"
+              />
+            </picture>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+
+      <section
         id="descripcion"
-        data-aos="flip-left"
+        data-aos="fade-up"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
+        data-aos-duration="600"
         class="cont-descripcion margen-general margen-general-top"
       >
-        <div class="cont-descripcion-items">
-          <h3>Descripción</h3>
+        <header class="section-head">
+          <span class="section-index" aria-hidden="true">01</span>
+          <h2>Descripción</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-hint" aria-hidden="true">// about.md</span>
+        </header>
+        <div class="cont-descripcion-items panel">
+          <p class="terminal-comment"># Perfil</p>
           <p>Soy desarrollador web, con conocimientos en:</p>
           <ul>
             <li>HTML5, CSS3, JavaScript (ES6+), Python, Bootstrap.</li>
             <li>PHP (CakePHP, Laravel).</li>
             <li>Bases de datos: MySQL, MariaDB.</li>
             <li>
-              Control de versiones con Git (GitLab, Gihub), Bitbucket y Jira.
+              Control de versiones con Git (GitLab, GitHub), Bitbucket y Jira.
             </li>
             <li>Maquetación con Figma.</li>
             <li>Entornos containerizados con Docker.</li>
@@ -99,19 +239,24 @@
             conocimientos y habilidades, y seguir creciendo.
           </p>
         </div>
-      </div>
-      <div id="experiencia" class="cont-experiencia margen-general">
-        <h3 class="mb-4">Experiencia Laboral</h3>
+      </section>
+
+      <section id="experiencia" class="cont-experiencia margen-general">
+        <header class="section-head">
+          <span class="section-index" aria-hidden="true">02</span>
+          <h2>Experiencia Laboral</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-hint" aria-hidden="true">// work.log</span>
+        </header>
 
         <div class="row cont-experiencia-items">
           <div class="col-md-4 mb-4">
-            <div data-aos="fade-down" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Desarrollador Web - Nosotros S.A. - Junio 2023 - Febrero 2025
                   - Asunción - Paraguay
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 <ul>
                   <li>
                     Soporte y mantenimiento de páginas web, utilizando
@@ -138,19 +283,17 @@
                     SQL y planillas Excel.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="fade-down" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Web Developer Jr. Software Natura - Diciembre 2020 a mayo 2022
                   - Asunción - Paraguay
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 Carga de contenido para el proyecto de Siembra Digital, haciendo
                 uso de tecnologías como, HTML, CSS, Git, Bitbucket, Jira y Miro.
                 <br />
@@ -163,20 +306,18 @@
                     combina dos estrategias ágiles comunes: Scrum y Kanban.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="fade-down" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Encargado de laboratorios de informática UAA (Universidad
                   Autónoma de Asunción) - Abril 2016 a diciembre 2016 - Asunción
                   - Paraguay
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 <ul>
                   <li>
                     Tareas de apoyo a los alumnos, con el registro de horas de
@@ -188,29 +329,32 @@
                   </li>
                   <li>Instalación de programas varios.</li>
                   <li>
-                    Mantención y reparación de equipos informáticos en dichas
+                    Mantenimiento y reparación de equipos informáticos en dichas
                     salas de informática.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="formacion" class="cont-formacion margen-general">
-        <h3 class="mb-4">Formación</h3>
+      <section id="formacion" class="cont-formacion margen-general">
+        <header class="section-head">
+          <span class="section-index" aria-hidden="true">03</span>
+          <h2>Formación</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-hint" aria-hidden="true">// education.log</span>
+        </header>
 
         <div class="row cont-formacion-items">
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   PROGRAMACIÓN PYTHON SNPP (Servicio Nacional de Promoción
                   Profesional) | Enero 2026 - Febrero 2026
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 <ul>
                   <li>
                     Conceptos de programación en Python utilizando la librería
@@ -218,37 +362,34 @@
                     junto con bases de datos MariaDB.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   PROGRAMACIÓN WEB BACKEND PHP SNPP (Servicio Nacional de
                   Promoción Profesional) | Octubre 2025 - Diciembre 2025
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 <ul>
                   <li>
                     Conceptos de programación web con el lenguaje PHP, empleando
                     bases de datos como MariaDB y PostgreSQL.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Scrum Foundation Professional Certificate SFPC CERTIPROF Mayo
                   2023
-                </h5>
+                </h3>
                 <p class="card-text">
                   Scrum es un marco de trabajo ágil que se utiliza para
                   gestionar proyectos complejos, fomentando la colaboración, la
@@ -263,12 +404,12 @@
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Programación básica en Python MITYC (MINISTERIO DE TECNOLOGÍAS
                   DE LA INFORMACIÓN Y COMUNICACIÓN) Julio 2022 a agosto 2022
-                </h5>
+                </h3>
                 <p class="card-text">
                   Conceptos básicos sobre la programación en el lenguaje Python.
                 </p>
@@ -277,12 +418,12 @@
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Curso de Inglés CCPA (CENTRO CULTURAL PARAGUAYO AMERICANO)
                   2015 a 2018
-                </h5>
+                </h3>
                 <p class="card-text">
                   Gramática de la lengua inglesa, conversación en inglés.
                 </p>
@@ -291,12 +432,12 @@
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Ingeniería en Sistemas Informáticos UAA (UNIVERSIDAD AUTÓNOMA
                   DE ASUNCIÓN) Desde marzo 2016
-                </h5>
+                </h3>
                 <p class="card-text">
                   Ingeniería en sistemas informáticos con énfasis en análisis de
                   sistemas.
@@ -306,13 +447,12 @@
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Montaje y Reparación de PC, Redes y Windows Server, Linux SNPP
                   (SERVICIO NACIONAL DE PROMOCIÓN PROFESIONAL) 2015
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 <ul>
                   <li>Montaje y desmontaje PC.</li>
                   <li>Mantenimiento de HW y SW.</li>
@@ -323,19 +463,17 @@
                     Administración de SO linux, instalación y comandos de uso.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
-            <div data-aos="zoom-in" class="card" style="width: 100%">
+            <div data-aos="fade-up" data-aos-duration="600" class="card">
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Bachillerato Técnico en Informática CMA (COLEGIO PRIVADO MARÍA
                   AUXILIADORA) Febrero 2010 a noviembre 2012
-                </h5>
-                <!-- <p class="card-text"> -->
+                </h3>
                 <ul>
                   <li>Bases y fundamentos de la informática.</li>
                   <li>Análisis a pequeña escala de un sistema informático.</li>
@@ -344,69 +482,149 @@
                     Uso de algunos lenguajes de programación como C y Basic.
                   </li>
                 </ul>
-                <!-- </p> -->
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="competencias" data-aos="flip-up" class="cont-competencias margen-general">
-        <div class="cont-competencias-items">
-          <h3>Competencias</h3>
-          <ul>
-            <li>Creatividad.</li>
-            <li>Perseverancia.</li>
-            <li>Organización.</li>
-            <li>Flexibilidad.</li>
+      <section
+        id="competencias"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        class="cont-competencias margen-general"
+      >
+        <header class="section-head">
+          <span class="section-index" aria-hidden="true">04</span>
+          <h2>Competencias</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-hint" aria-hidden="true">// skills.toml</span>
+        </header>
+        <div class="cont-competencias-items panel">
+          <ul class="check-list">
+            <li><span class="check" aria-hidden="true">[x]</span> Creatividad.</li>
+            <li><span class="check" aria-hidden="true">[x]</span> Perseverancia.</li>
+            <li><span class="check" aria-hidden="true">[x]</span> Organización.</li>
+            <li><span class="check" aria-hidden="true">[x]</span> Flexibilidad.</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <div id="intereses" data-aos="flip-up" class="cont-intereses margen-general">
-        <div class="cont-intereses-items">
-          <h3>Intereses</h3>
-          <p>Programación Backend y Frontend.</p>
+      <section
+        id="intereses"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        class="cont-intereses margen-general"
+      >
+        <header class="section-head">
+          <span class="section-index" aria-hidden="true">05</span>
+          <h2>Intereses</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-hint" aria-hidden="true">// interests.txt</span>
+        </header>
+        <div class="cont-intereses-items panel">
+          <p class="interest-line">
+            <span class="prompt-arrow" aria-hidden="true">›</span>
+            Programación Backend y Frontend.
+          </p>
         </div>
-      </div>
+      </section>
 
-      <div id="contacto" data-aos="flip-up" class="cont-contacto margen-general">
-        <div class="cont-contacto-items">
-          <h3>Contacto</h3>
-          <!-- <p> -->
-          <ul class="list-unstyled">
-            <li class="justificacion-del-footer">
-              <a href="mailto:mariog.contacto@gmail.com">
-                <i class="fas fa-envelope"></i> Email
+      <section
+        id="contacto"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        class="cont-contacto margen-general"
+      >
+        <header class="section-head">
+          <span class="section-index" aria-hidden="true">06</span>
+          <h2>Contacto</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-hint" aria-hidden="true">// contact.sh</span>
+        </header>
+        <div class="cont-contacto-items panel">
+          <ul class="contact-list">
+            <li>
+              <a class="contact-link" href="mailto:mariog.contacto@gmail.com">
+                <span class="contact-key"
+                  ><i class="fas fa-envelope" aria-hidden="true"></i> mail</span
+                >
+                <span class="contact-sep" aria-hidden="true">→</span>
+                <span class="contact-value">mariog.contacto@gmail.com</span>
               </a>
             </li>
-            <!-- <li class="justificacion-del-footer">
-                  <a href="tel:+595991230448">
-                    <i class="fas fa-phone"></i> Teléfono
-                  </a>
-                </li> -->
-            <li class="justificacion-del-footer">
-              <a target="_blank" href="https://wa.link/ucrwho">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-              </a>
-            </li>
-            <li class="justificacion-del-footer">
+            <li>
               <a
+                class="contact-link"
                 target="_blank"
-                href="https://www.linkedin.com/in/mario-gonz%C3%A1lez-429a94190/"
-                ><i class="fab fa-linkedin"></i> LinkedIn</a
+                rel="noopener"
+                href="https://wa.link/ucrwho"
               >
+                <span class="contact-key"
+                  ><i class="fab fa-whatsapp" aria-hidden="true"></i> wa</span
+                >
+                <span class="contact-sep" aria-hidden="true">→</span>
+                <span class="contact-value">wa.link/ucrwho</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact-link"
+                target="_blank"
+                rel="noopener"
+                href="https://www.linkedin.com/in/mario-gonz%C3%A1lez-429a94190/"
+              >
+                <span class="contact-key"
+                  ><i class="fab fa-linkedin" aria-hidden="true"></i> in</span
+                >
+                <span class="contact-sep" aria-hidden="true">→</span>
+                <span class="contact-value">linkedin.com/in/mario-gonzález</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact-link"
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/marioGonzalez95"
+              >
+                <span class="contact-key"
+                  ><i class="fab fa-github" aria-hidden="true"></i> gh</span
+                >
+                <span class="contact-sep" aria-hidden="true">→</span>
+                <span class="contact-value">github.com/marioGonzalez95</span>
+              </a>
             </li>
           </ul>
-          <!-- </p> -->
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <footer class="status-bar" aria-hidden="true">
+      <span class="status-mode">NORMAL</span>
+      <span class="status-item">~/cv</span>
+      <span class="status-item optional">UTF-8</span>
+      <span class="status-spacer"></span>
+      <span class="status-item optional">es_PY</span>
+      <span class="status-item">2026</span>
+    </footer>
+
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/js_general_.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/js_general_.js"></script>
     <script>
-      AOS.init();
+      if (typeof AOS !== "undefined") {
+        AOS.init({
+          duration: 600,
+          easing: "ease-out-cubic",
+          once: true,
+          disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+        });
+      } else {
+        document.querySelectorAll("[data-aos]").forEach(function (el) {
+          el.removeAttribute("data-aos");
+        });
+      }
     </script>
   </body>
 </html>
