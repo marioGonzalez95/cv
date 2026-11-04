@@ -716,13 +716,6 @@ p {
   border-color: #fab283;
 }
 
-.photo-caption {
-  display: block;
-  margin-top: 10px;
-  color: #4c4c4c;
-  font-size: 10.5px;
-}
-
 .cont-experiencia-items .card,
 .cont-formacion-items .card {
   height: 100%;
@@ -951,9 +944,6 @@ p {
     height: 96px;
     margin: 0;
   }
-  .photo-caption {
-    margin-top: 0;
-  }
 }
 @media (max-width: 850px) {
   body {
@@ -1103,8 +1093,7 @@ p {
   }
   .terminal-comment,
   .terminal-line,
-  .hero-location,
-  .photo-caption {
+  .hero-location {
     color: #444;
   }
   .prompt-arrow,

@@ -808,13 +808,6 @@ p {
     }
 }
 
-.photo-caption {
-    display: block;
-    margin-top: 10px;
-    color: $faint;
-    font-size: 10.5px;
-}
-
 // ============================================================
 // Tarjetas (Bootstrap)
 // ============================================================
@@ -1074,9 +1067,6 @@ p {
         margin: 0;
     }
 
-    .photo-caption {
-        margin-top: 0;
-    }
 }
 
 @media (max-width: 850px) {
@@ -1263,8 +1253,7 @@ p {
 
     .terminal-comment,
     .terminal-line,
-    .hero-location,
-    .photo-caption {
+    .hero-location {
         color: #444;
     }
 
